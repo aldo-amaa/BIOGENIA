@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BIOGENIA · Cuida el mar, que es nuestro hogar</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #e8f4f8;
+    color: #1f2937;
+  }
+
+  .encabezado {
+    background: linear-gradient(135deg, #0d3b66, #2a9d8f);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .encabezado h1 {
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+  }
+
+  .encabezado .subtitulo {
+    font-size: 17px;
+    font-style: italic;
+    color: #d9f2ee;
+    margin: 0;
+  }
+
+  .container { max-width: 850px; }
+
+  nav {
+    background: #0d3b66;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+
+  nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover { color: #f4a261; }
+
+  h2 {
+    color: #0d3b66;
+    border-bottom: 3px solid #2a9d8f;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  h3 { color: #2a9d8f; }
+
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(13, 59, 102, 0.12);
+  }
+
+  .card p, .card li { line-height: 1.6; }
+
+  ul.objetivos { padding-left: 20px; }
+  ul.objetivos li { margin-bottom: 10px; }
+
+  .producto {
+    background: white;
+    border-radius: 12px;
+    border-top: 5px solid #2a9d8f;
+    box-shadow: 0 3px 10px rgba(13, 59, 102, 0.12);
+    padding: 20px 15px;
+    text-align: center;
+    height: 100%;
+  }
+
+  .producto .emoji {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .producto h3 {
+    font-size: 1.05rem;
+    color: #0d3b66;
+    margin-bottom: 8px;
+  }
+
+  .producto p {
+    font-size: 0.92rem;
+    color: #4b5563;
+    margin: 0;
+  }
+
+  .franja {
+    background: #0d3b66;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .franja .numero {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #f4a261;
+  }
+
+  .franja .texto { font-size: 0.9rem; }
+
+  footer {
+    background: #0d3b66;
+    color: #cfe3f2;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  /* Paginación entre páginas */
+  .paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+
+  .paginacion a,
+  .paginacion span {
+    display: inline-block;
+    min-width: 40px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0d3b66;
+    background: #e8f4f8;
+    border: 1px solid #2a9d8f;
+  }
+
+  .paginacion a:hover {
+    background: #f4a261;
+    color: #0d3b66;
+  }
+
+  .paginacion .actual {
+    background: #f4a261;
+    border-color: #f4a261;
+  }
+
+  .paginacion .desactivado {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+</style>
+</head>
+<body>
+
+<div class="encabezado">
+  <h1>BIOGENIA</h1>
+  <p class="subtitulo">"Cuida el mar, que es nuestro hogar."</p>
+</div>
+
+<div class="container">
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#productos">Productos</a>
+  </nav>
+
+  <div class="card p-3 my-3" id="inicio">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      En Biogenia nacemos con un compromiso irrenunciable: transformar la relación entre la
+      actividad humana y los recursos hídricos de nuestro planeta. Alineados con el Objetivo de
+      Desarrollo Sostenible 14 (Vida Submarina) de la Agenda 2030 de las Naciones Unidas,
+      desarrollamos soluciones e insumos de alta tecnología para proteger, conservar y regenerar
+      los ecosistemas acuáticos.
+    </p>
+    <p class="mb-0">
+      A través de la ciencia aplicada y la innovación sostenible, impulsamos productos que mitigan
+      la contaminación en ríos, lagos y océanos. Creemos que la salud de los mares es la base del
+      equilibrio ecológico global, y por eso combinamos investigación de vanguardia con
+      responsabilidad ambiental.
+    </p>
+  </div>
+
+  <div class="card p-3 my-3" id="objetivos">
+    <h2>¿Cuál es nuestro objetivo?</h2>
+    <ul class="objetivos mt-3">
+      <li><strong>Investigación e Innovación (I+D):</strong> diseñar fórmulas 100% biodegradables y no tóxicas que neutralicen contaminantes orgánicos e inorgánicos sin alterar el pH ni afectar la flora y fauna acuática.</li>
+      <li><strong>Reducción de contaminantes y microplásticos:</strong> crear soluciones que intercepten, degraden o filtren agentes nocivos —químicos industriales, detergentes y microplásticos— antes de que lleguen a ríos, mares y océanos.</li>
+      <li><strong>Economía circular y empaques sostenibles:</strong> garantizar que todo el ciclo de vida del producto sea sustentable, con envases de plástico marino reciclado, materiales compostables o formatos sin plástico.</li>
+      <li><strong>Saneamiento y recuperación de ecosistemas:</strong> implementar líneas de productos para la depuración de efluentes domésticos e industriales, ayudando a rehabilitar cuerpos de agua contaminados.</li>
+      <li><strong>Sensibilización y alianzas:</strong> colaborar con ONGs, gobiernos y centros de investigación para promover la educación ambiental y políticas públicas de protección de costas y océanos.</li>
+    </ul>
+  </div>
+
+  <div class="my-4" id="productos">
+    <h2>Nuestros productos</h2>
+    <div class="row g-3 mt-2">
+      <div class="col-12 col-sm-6">
+        <div class="producto">
+          <span class="emoji">🧺</span>
+          <h3>Filtro para lavadora</h3>
+          <p>Atrapa los microplásticos de la ropa para que no lleguen al mar al lavar.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="producto">
+          <span class="emoji">🧴</span>
+          <h3>Bloqueador ecológico</h3>
+          <p>Hecho con minerales naturales que no dañan ni blanquean los arrecifes de coral.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="producto">
+          <span class="emoji">🎣</span>
+          <h3>Red biodegradable</h3>
+          <p>Se deshace sola con el tiempo si se pierde, evitando atrapar peces por accidente.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="producto">
+          <span class="emoji">🥤</span>
+          <h3>Botella reutilizable</h3>
+          <p>Sustituye a las botellas de plástico de un solo uso que terminan en el océano.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="franja my-4">
+    <div class="row">
+      <div class="col-6 col-md-3 mb-3 mb-md-0">
+        <span class="numero">100%</span>
+        <span class="texto">Fórmulas biodegradables</span>
+      </div>
+      <div class="col-6 col-md-3 mb-3 mb-md-0">
+        <span class="numero">0</span>
+        <span class="texto">Plástico de un solo uso</span>
+      </div>
+      <div class="col-6 col-md-3">
+        <span class="numero">ODS 14</span>
+        <span class="texto">Vida Submarina</span>
+      </div>
+      <div class="col-6 col-md-3">
+        <span class="numero">4</span>
+        <span class="texto">Líneas de producto</span>
+      </div>
+    </div>
+  </div>            
+
+</div>
+
+<footer>
+  <div class="paginacion">
+    <a href="index.html">&laquo; Anterior</a>
+    <a href="index.html" class="actual">1</a>
+    <a href="index (3).html">2</a>
+    <a href="index (2).html">3</a>
+    <a href="index (3).html">Siguiente &raquo;</a>
+  </div>
+  Biogenia · Cuidemos el agua que nos queda 🌊
+</footer>
+
+</body>
+</html>
